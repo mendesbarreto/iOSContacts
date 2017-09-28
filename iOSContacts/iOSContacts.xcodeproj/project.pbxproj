@@ -63,7 +63,6 @@
 			children = (
 				A5422A821F7C593F00D8C326 /* Main.storyboard */,
 				A5422A8A1F7C593F00D8C326 /* LaunchScreen.storyboard */,
-				A5422A8D1F7C593F00D8C326 /* Info.plist */,
 				A5422A851F7C593F00D8C326 /* iOSContacts.xcdatamodeld */,
 				A5422A881F7C593F00D8C326 /* Assets.xcassets */,
 			);
@@ -91,6 +90,7 @@
 		A5422A7D1F7C593F00D8C326 /* iOSContacts */ = {
 			isa = PBXGroup;
 			children = (
+				A5422A8D1F7C593F00D8C326 /* Info.plist */,
 				A535C69B1F7C80BE00B8A437 /* Resources */,
 				A5422A7E1F7C593F00D8C326 /* AppDelegate.swift */,
 				A5422A801F7C593F00D8C326 /* ViewController.swift */,
@@ -369,7 +369,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = WQVLGGBH98;
-				INFOPLIST_FILE = "$(SRCROOT)/iOSContacts/Resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/iOSContacts/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.douglas.iOSContacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -387,7 +387,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = WQVLGGBH98;
-				INFOPLIST_FILE = "$(SRCROOT)/iOSContacts/Resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/iOSContacts/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.douglas.iOSContacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
