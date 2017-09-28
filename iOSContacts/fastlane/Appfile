@@ -1,0 +1,7 @@
+app_identifier "br.com.douglas.iOSContacts" # The bundle identifier of your app
+apple_id "mendes-barreto@live.com" # Your Apple email address
+team_id "WQVLGGBH98" # Developer Portal Team ID
+itc_team_id "118193874"
+
+# you can even provide different app identifiers, Apple IDs and team names per lane:
+# More information: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Appfile.md
