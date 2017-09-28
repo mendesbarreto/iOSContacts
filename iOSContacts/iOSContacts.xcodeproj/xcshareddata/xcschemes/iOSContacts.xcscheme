@@ -28,7 +28,26 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A5422A911F7C593F00D8C326"
+               BuildableName = "iOSContactsTests.xctest"
+               BlueprintName = "iOSContactsTests"
+               ReferencedContainer = "container:iOSContacts.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "A5422A7A1F7C593F00D8C326"
+            BuildableName = "iOSContacts.app"
+            BlueprintName = "iOSContacts"
+            ReferencedContainer = "container:iOSContacts.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -62,6 +81,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "A5422A7A1F7C593F00D8C326"
+            BuildableName = "iOSContacts.app"
+            BlueprintName = "iOSContacts"
+            ReferencedContainer = "container:iOSContacts.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
