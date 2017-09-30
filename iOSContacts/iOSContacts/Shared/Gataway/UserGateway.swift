@@ -6,11 +6,14 @@
 import CoreData
 
 protocol UserProvider {
+    func save() throws
     func fetchUsers() -> [User]
-    func create(user: User)
-    func update(user: User)
-    func delete(user: User)
-    func save()
+    func delete(user: User) throws
+    func createUserWith(name: String,
+                        lastName: String,
+                        birthday: Date,
+                        phone: Phone?,
+                        address: Address?) throws -> User
 }
 
 final class UserGateway: UserProvider {
@@ -20,23 +23,48 @@ final class UserGateway: UserProvider {
         self.viewContext = viewContext
     }
 
-    func create(user: User) {
-        fatalError("create() has not been implemented")
+    func createUserWith(name: String,
+                        lastName: String,
+                        birthday: Date,
+                        phone: Phone? = nil,
+                        address: Address? = nil) throws -> User {
+
+        let user = UserFactory.createUser()
+        user.name = name
+        user.lastName = lastName
+        user.phone = phone
+        user.address = address
+
+        try save()
+
+        return user
     }
 
-    func update(user: User) {
-        fatalError("update() has not been implemented")
-    }
-
-    func delete(user: User) {
-        fatalError("delete() has not been implemented")
+    func delete(user: User) throws {
+        let deleteRequest = NSBatchDeleteRequest(objectIDs: [user.objectID])
+        do {
+            try viewContext.execute(deleteRequest)
+        } catch {
+            throw UserError.problemToDeleteUser
+        }
     }
 
     func fetchUsers() -> [User] {
-        fatalError("fetchUsers() has not been implemented")
+        do {
+            let request = NSFetchRequest<User>(entityName: User.entityName)
+            return try viewContext.fetch(request)
+        } catch let error {
+            print("Problem to search users in coredata because: \(error.localizedDescription)")
+            return [User]()
+        }
     }
 
-    func save() {
-        fatalError("save() has not been implemented")
+    func save() throws {
+        do {
+            try viewContext.save()
+        } catch {
+            print("Problem to save user in coredata")
+            throw UserError.problemToSaveUser
+        }
     }
 }
