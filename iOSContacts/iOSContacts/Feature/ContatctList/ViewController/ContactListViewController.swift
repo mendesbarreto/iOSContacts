@@ -9,10 +9,8 @@
 import UIKit
 
 final class ContactListViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 }
 
