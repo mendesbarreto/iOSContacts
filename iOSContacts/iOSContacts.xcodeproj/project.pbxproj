@@ -14,6 +14,10 @@
 		A5422A891F7C593F00D8C326 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5422A881F7C593F00D8C326 /* Assets.xcassets */; };
 		A5422A8C1F7C593F00D8C326 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5422A8A1F7C593F00D8C326 /* LaunchScreen.storyboard */; };
 		A5422A971F7C593F00D8C326 /* iOSContactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5422A961F7C593F00D8C326 /* iOSContactsTests.swift */; };
+		A59774781F802AB70062C4A4 /* Address+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59774741F802AB70062C4A4 /* Address+CoreDataClass.swift */; };
+		A59774791F802AB70062C4A4 /* Address+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59774751F802AB70062C4A4 /* Address+CoreDataProperties.swift */; };
+		A597747A1F802AB70062C4A4 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59774761F802AB70062C4A4 /* User+CoreDataClass.swift */; };
+		A597747B1F802AB70062C4A4 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59774771F802AB70062C4A4 /* User+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 		A5422A921F7C593F00D8C326 /* iOSContactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSContactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5422A961F7C593F00D8C326 /* iOSContactsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSContactsTests.swift; sourceTree = "<group>"; };
 		A5422A981F7C593F00D8C326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A59774741F802AB70062C4A4 /* Address+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Address+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A59774751F802AB70062C4A4 /* Address+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Address+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A59774761F802AB70062C4A4 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A59774771F802AB70062C4A4 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +98,7 @@
 		A5422A7D1F7C593F00D8C326 /* iOSContacts */ = {
 			isa = PBXGroup;
 			children = (
+				A59774731F802A3C0062C4A4 /* Entity */,
 				A5422A8D1F7C593F00D8C326 /* Info.plist */,
 				A535C69B1F7C80BE00B8A437 /* Resources */,
 				A5422A7E1F7C593F00D8C326 /* AppDelegate.swift */,
@@ -105,6 +114,17 @@
 				A5422A981F7C593F00D8C326 /* Info.plist */,
 			);
 			path = iOSContactsTests;
+			sourceTree = "<group>";
+		};
+		A59774731F802A3C0062C4A4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				A59774741F802AB70062C4A4 /* Address+CoreDataClass.swift */,
+				A59774751F802AB70062C4A4 /* Address+CoreDataProperties.swift */,
+				A59774761F802AB70062C4A4 /* User+CoreDataClass.swift */,
+				A59774771F802AB70062C4A4 /* User+CoreDataProperties.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,7 +230,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A59774781F802AB70062C4A4 /* Address+CoreDataClass.swift in Sources */,
 				A5422A811F7C593F00D8C326 /* ViewController.swift in Sources */,
+				A597747A1F802AB70062C4A4 /* User+CoreDataClass.swift in Sources */,
+				A597747B1F802AB70062C4A4 /* User+CoreDataProperties.swift in Sources */,
+				A59774791F802AB70062C4A4 /* Address+CoreDataProperties.swift in Sources */,
 				A5422A7F1F7C593F00D8C326 /* AppDelegate.swift in Sources */,
 				A5422A871F7C593F00D8C326 /* iOSContacts.xcdatamodeld in Sources */,
 			);
