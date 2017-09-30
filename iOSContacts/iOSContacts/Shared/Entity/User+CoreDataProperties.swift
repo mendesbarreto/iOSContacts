@@ -17,9 +17,10 @@ extension User {
         return NSFetchRequest<User>(entityName: "User")
     }
 
-    @NSManaged public var name: String?
-    @NSManaged public var lastName: String?
     @NSManaged public var birthDay: NSDate?
-    @NSManaged public var address: User?
+    @NSManaged public var lastName: String?
+    @NSManaged public var name: String?
+    @NSManaged public var address: Address?
+    @NSManaged public var phone: Phone?
 
 }
