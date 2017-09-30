@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ContactListViewController.swift
 //  iOSContacts
 //
 //  Created by Douglas Barreto on 27/09/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ContactListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,5 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
