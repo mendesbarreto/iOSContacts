@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6DFA4B5CA2A11B428C075783 /* NSManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFA4CDDEA5FA4D0F3DCD361 /* NSManagedObject.swift */; };
+		6DFA4051F43A0801E63B5445 /* UserGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFA40E58289027EBED51D5B /* UserGateway.swift */; };
+		6DFA48D3602F71AA89F419D9 /* UserFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFA4C2BB7F4E7BCD502F34D /* UserFactory.swift */; };
+		6DFA4BFFAF8C2DF0CE48B397 /* UserGatewayFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFA47A575B61E8539357AC3 /* UserGatewayFactory.swift */; };
 		6DFA4EB4100B6AE00DE04588 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFA4794683D35D600B60528 /* ContactListViewController.swift */; };
 		A5422A7F1F7C593F00D8C326 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5422A7E1F7C593F00D8C326 /* AppDelegate.swift */; };
 		A5422A871F7C593F00D8C326 /* iOSContacts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A5422A851F7C593F00D8C326 /* iOSContacts.xcdatamodeld */; };
@@ -19,6 +21,8 @@
 		A597747B1F802AB70062C4A4 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59774771F802AB70062C4A4 /* User+CoreDataProperties.swift */; };
 		A59774801F802F150062C4A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A597747C1F802F0B0062C4A4 /* Main.storyboard */; };
 		A59774811F802F170062C4A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A597747E1F802F0B0062C4A4 /* LaunchScreen.storyboard */; };
+		A5F55C6A1F80442E00D47669 /* NSManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F55C691F80442D00D47669 /* NSManagedObject.swift */; };
+		A5F55C6C1F80444F00D47669 /* ApplicationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F55C6B1F80444F00D47669 /* ApplicationError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6DFA40E58289027EBED51D5B /* UserGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserGateway.swift; sourceTree = "<group>"; };
 		6DFA4794683D35D600B60528 /* ContactListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
+		6DFA47A575B61E8539357AC3 /* UserGatewayFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserGatewayFactory.swift; sourceTree = "<group>"; };
+		6DFA4C2BB7F4E7BCD502F34D /* UserFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserFactory.swift; sourceTree = "<group>"; };
 		6DFA4CDDEA5FA4D0F3DCD361 /* NSManagedObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSManagedObject.swift; sourceTree = "<group>"; };
 		A5422A7B1F7C593F00D8C326 /* iOSContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5422A7E1F7C593F00D8C326 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +55,8 @@
 		A59774771F802AB70062C4A4 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A597747D1F802F0B0062C4A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A597747F1F802F0B0062C4A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A5F55C691F80442D00D47669 /* NSManagedObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSManagedObject.swift; sourceTree = "<group>"; };
+		A5F55C6B1F80444F00D47669 /* ApplicationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +77,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6DFA457089A6AF3F66CBDB42 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A5F55C681F80442D00D47669 /* Extensions */,
+				A5F55C671F8043EF00D47669 /* Exception */,
+				A59774731F802A3C0062C4A4 /* Entity */,
+				6DFA49B9B512D09901574B48 /* Gataway */,
+				6DFA4CE9687B070CE40CEE2E /* Factory */,
+				6DFA490386E14378531E8330 /* Extensions */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		6DFA46887D21E57919E7BB41 /* ContatctList */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +104,14 @@
 				6DFA4CDDEA5FA4D0F3DCD361 /* NSManagedObject.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6DFA49B9B512D09901574B48 /* Gataway */ = {
+			isa = PBXGroup;
+			children = (
+				6DFA40E58289027EBED51D5B /* UserGateway.swift */,
+			);
+			path = Gataway;
 			sourceTree = "<group>";
 		};
 		6DFA4AA3F25C4A7107FEBE07 /* Storyboard */ = {
@@ -107,6 +137,15 @@
 				6DFA46887D21E57919E7BB41 /* ContatctList */,
 			);
 			path = Feature;
+			sourceTree = "<group>";
+		};
+		6DFA4CE9687B070CE40CEE2E /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				6DFA47A575B61E8539357AC3 /* UserGatewayFactory.swift */,
+				6DFA4C2BB7F4E7BCD502F34D /* UserFactory.swift */,
+			);
+			path = Factory;
 			sourceTree = "<group>";
 		};
 		A535C69B1F7C80BE00B8A437 /* Resources */ = {
@@ -140,12 +179,11 @@
 		A5422A7D1F7C593F00D8C326 /* iOSContacts */ = {
 			isa = PBXGroup;
 			children = (
-				A59774731F802A3C0062C4A4 /* Entity */,
 				A5422A8D1F7C593F00D8C326 /* Info.plist */,
 				A535C69B1F7C80BE00B8A437 /* Resources */,
 				A5422A7E1F7C593F00D8C326 /* AppDelegate.swift */,
 				6DFA4C860EE050502ACCC83B /* Feature */,
-				6DFA490386E14378531E8330 /* Extensions */,
+				6DFA457089A6AF3F66CBDB42 /* Shared */,
 			);
 			path = iOSContacts;
 			sourceTree = "<group>";
@@ -168,6 +206,22 @@
 				A59774771F802AB70062C4A4 /* User+CoreDataProperties.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		A5F55C671F8043EF00D47669 /* Exception */ = {
+			isa = PBXGroup;
+			children = (
+				A5F55C6B1F80444F00D47669 /* ApplicationError.swift */,
+			);
+			path = Exception;
+			sourceTree = "<group>";
+		};
+		A5F55C681F80442D00D47669 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A5F55C691F80442D00D47669 /* NSManagedObject.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,14 +327,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5F55C6C1F80444F00D47669 /* ApplicationError.swift in Sources */,
 				A59774781F802AB70062C4A4 /* Address+CoreDataClass.swift in Sources */,
+				A5F55C6A1F80442E00D47669 /* NSManagedObject.swift in Sources */,
 				A597747A1F802AB70062C4A4 /* User+CoreDataClass.swift in Sources */,
 				A597747B1F802AB70062C4A4 /* User+CoreDataProperties.swift in Sources */,
 				A59774791F802AB70062C4A4 /* Address+CoreDataProperties.swift in Sources */,
 				A5422A7F1F7C593F00D8C326 /* AppDelegate.swift in Sources */,
 				A5422A871F7C593F00D8C326 /* iOSContacts.xcdatamodeld in Sources */,
 				6DFA4EB4100B6AE00DE04588 /* ContactListViewController.swift in Sources */,
-				6DFA4B5CA2A11B428C075783 /* NSManagedObject.swift in Sources */,
+				6DFA4051F43A0801E63B5445 /* UserGateway.swift in Sources */,
+				6DFA4BFFAF8C2DF0CE48B397 /* UserGatewayFactory.swift in Sources */,
+				6DFA48D3602F71AA89F419D9 /* UserFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
