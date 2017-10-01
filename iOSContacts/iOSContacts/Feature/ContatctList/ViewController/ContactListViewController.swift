@@ -10,6 +10,8 @@ import UIKit
 
 final class ContactListViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+
     private let userProvider = UserProviderFactory.create()
     private var users: [User]!
 
