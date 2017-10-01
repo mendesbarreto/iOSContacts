@@ -7,15 +7,10 @@ import UIKit
 
 protocol UITableViewCellReusable: class {
     static var reuseIdentifier: String { get }
-    static var nib: UINib? { get }
 }
 
 extension UITableViewCellReusable {
     static var reuseIdentifier: String {
         return String(describing: self)
-    }
-
-    static var nib: UINib? {
-        return UINib(nibName: String(describing: self), bundle: nil)
     }
 }
